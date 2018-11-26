@@ -19,7 +19,8 @@ class NovaElementsServiceProvider extends ServiceProvider
         }
 
         Nova::serving(function ($event) {
-            Nova::script('nova-element-ui', 'vendor/nova-element-ui/nova-element-ui.js');
+//            Nova::script('nova-element-ui', 'vendor/nova-element-ui/nova-element-ui.js');
+            Nova::script('nova-element-ui', __DIR__.'/../dist/nova-element-ui.js');
         });
 
     }

@@ -1,23 +1,23 @@
 {
-    "name": "nightkit/nova-element-ui",
-    "version": "0.8.0",
-    "description": "Element UI components for Laravel Nova",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Ilya Glinsky",
-            "email": "fat4lix@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "laravel/nova": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "NightKit\\NovaElements\\": "src"
-        }
+  "name": "chang/nova-element-ui",
+  "description": "Element UI components for Laravel Nova",
+  "authors": [
+    {
+      "name": "Ilya Glinsky",
+      "email": "fat4lix@gmail.com"
     }
-    
+  ],
+  "require": {
+    "laravel/nova": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "NightKit\\NovaElements\\": "src"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }

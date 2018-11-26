@@ -1,4 +1,5 @@
-import locale from 'element-ui/lib/locale';
+import locale from 'element-ui/lib/locale'
+
 const mapLocales = {
   'af-ZA': require('element-ui/lib/locale/lang/af-ZA'),
   'ar': require('element-ui/lib/locale/lang/ar'),
@@ -48,40 +49,42 @@ const mapLocales = {
 }
 
 import {
-    Select,
-    Option,
-    Input,
-    Autocomplete,
-    InputNumber,
-    Radio,
-    RadioButton,
-    RadioGroup,
-    Checkbox,
-    CheckboxButton,
-    CheckboxGroup,
-    ColorPicker,
-    Switch,
-    Tag,
-    Tabs,
-    TabPane
-} from 'element-ui';
+  Select,
+  Option,
+  Input,
+  Autocomplete,
+  InputNumber,
+  Radio,
+  RadioButton,
+  RadioGroup,
+  Checkbox,
+  CheckboxButton,
+  CheckboxGroup,
+  ColorPicker,
+  Switch,
+  Tag,
+  Tabs,
+  TabPane,
+  Dialog
+} from 'element-ui'
 
-Nova.booting(function(Vue, router) {
-  locale.use(mapLocales[Nova.config.locale] || mapLocales['en']);
-  Vue.use(Select);
-  Vue.use(Option);
-  Vue.use(Input);
-  Vue.use(Autocomplete);
-  Vue.use(InputNumber);
-  Vue.use(Radio);
-  Vue.use(RadioButton);
-  Vue.use(RadioGroup);
-  Vue.use(Checkbox);
-  Vue.use(CheckboxButton);
-  Vue.use(CheckboxGroup);
-  Vue.use(ColorPicker);
-  Vue.use(Tag);
-  Vue.use(Switch);
-  Vue.use(TabPane);
-  Vue.use(Tabs);
+Nova.booting(function (Vue, router) {
+  locale.use(mapLocales[Nova.config.locale] || mapLocales['en'])
+  Vue.use(Select)
+  Vue.use(Option)
+  Vue.use(Input)
+  Vue.use(Autocomplete)
+  Vue.use(InputNumber)
+  Vue.use(Radio)
+  Vue.use(RadioButton)
+  Vue.use(RadioGroup)
+  Vue.use(Checkbox)
+  Vue.use(CheckboxButton)
+  Vue.use(CheckboxGroup)
+  Vue.use(ColorPicker)
+  Vue.use(Tag)
+  Vue.use(Switch)
+  Vue.use(TabPane)
+  Vue.use(Tabs)
+  Vue.use(Dialog)
 })
