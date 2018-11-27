@@ -10,17 +10,18 @@ class NovaElementsServiceProvider extends ServiceProvider
     public function boot()
     {
         if ($this->app->runningInConsole()) {
+//            $this->publishes([
+//                __DIR__.'/../vendor/nova-element-ui/dist' => public_path('vendor/nova-element-ui'),
+//            ], 'public');
             $this->publishes([
-                __DIR__.'/../dist' => public_path('vendor/nova-element-ui'),
-            ], 'public');
-            $this->publishes([
-                __DIR__.'/../fonts' => public_path('fonts'),
+                __DIR__.'/../fonts/vendor/element-ui/lib/theme-chalk' => public_path('fonts'),
             ], 'public');
         }
 
         Nova::serving(function ($event) {
-//            Nova::script('nova-element-ui', 'vendor/nova-element-ui/nova-element-ui.js');
-            Nova::script('nova-element-ui', __DIR__.'/../dist/nova-element-ui.js');
+            Nova::script('nova-element-ui', __DIR__.'/../dist/js/nova-element-ui.js');
+            Nova::style('nova-element-ui', __DIR__.'/../dist/css/nova-element-ui.css');
+//            Nova::script('nova-element-ui', __DIR__.'/../dist/nova-element-ui.js');
         });
 
     }

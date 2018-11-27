@@ -1,3 +1,4 @@
 {
-    "/dist/nova-element-ui.js": "/dist/nova-element-ui.js"
+    "/dist/js/nova-element-ui.js": "/dist/js/nova-element-ui.js",
+    "/dist/css/nova-element-ui.css": "/dist/css/nova-element-ui.css"
 }

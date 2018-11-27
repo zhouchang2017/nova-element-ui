@@ -1,5 +1,5 @@
 import locale from 'element-ui/lib/locale'
-
+// import '../../theme/index.css'
 const mapLocales = {
   'af-ZA': require('element-ui/lib/locale/lang/af-ZA'),
   'ar': require('element-ui/lib/locale/lang/ar'),
@@ -65,7 +65,9 @@ import {
   Tag,
   Tabs,
   TabPane,
-  Dialog
+  Dialog,
+  Steps,
+  Step,
 } from 'element-ui'
 
 Nova.booting(function (Vue, router) {
@@ -87,4 +89,6 @@ Nova.booting(function (Vue, router) {
   Vue.use(TabPane)
   Vue.use(Tabs)
   Vue.use(Dialog)
+  Vue.use(Steps)
+  Vue.use(Step)
 })
