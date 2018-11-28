@@ -256,7 +256,7 @@
   .el-notification__title {
     font-weight: bold;
     font-size: 16px;
-    color: #303133;
+    color: #4099de;
     margin: 0; }
   .el-notification__content {
     font-size: 14px;
@@ -280,13 +280,13 @@
     .el-notification__closeBtn:hover {
       color: #606266; }
   .el-notification .el-icon-success {
-    color: #67c23a; }
+    color: #21b978; }
   .el-notification .el-icon-error {
-    color: #f56c6c; }
+    color: #e74444; }
   .el-notification .el-icon-info {
-    color: #909399; }
+    color: #03a9f4; }
   .el-notification .el-icon-warning {
-    color: #e6a23c; }
+    color: #ffeb3b; }
 
 .el-notification-fade-enter.right {
   right: 0;

@@ -504,7 +504,7 @@
     line-height: 32px;
     font-size: 14px;
     width: 5%;
-    color: #303133; }
+    color: #4099de; }
   .el-date-editor .el-range__close-icon {
     font-size: 14px;
     color: #c0c4cc;
@@ -526,9 +526,9 @@
   line-height: 1; }
 
 .el-range-editor.is-active {
-  border-color: #409EFF; }
+  border-color: #4099de; }
   .el-range-editor.is-active:hover {
-    border-color: #409EFF; }
+    border-color: #4099de; }
 
 .el-range-editor--medium.el-input__inner {
   height: 36px; }
@@ -708,7 +708,7 @@
   -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   background: #fff;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   line-height: 30px;
   margin: 5px 0; }
   .el-picker-panel__body::after, .el-picker-panel__body-wrapper::after {
@@ -738,10 +738,10 @@
     outline: none;
     cursor: pointer; }
     .el-picker-panel__shortcut:hover {
-      color: #409EFF; }
+      color: #4099de; }
     .el-picker-panel__shortcut.active {
       background-color: #e6f1fe;
-      color: #409EFF; }
+      color: #4099de; }
   .el-picker-panel__btn {
     border: 1px solid #dcdcdc;
     color: #333;
@@ -757,14 +757,14 @@
       cursor: not-allowed; }
   .el-picker-panel__icon-btn {
     font-size: 12px;
-    color: #303133;
+    color: #4099de;
     border: 0;
     background: transparent;
     cursor: pointer;
     outline: none;
     margin-top: 8px; }
     .el-picker-panel__icon-btn:hover {
-      color: #409EFF; }
+      color: #4099de; }
     .el-picker-panel__icon-btn.is-disabled {
       color: #bbb; }
       .el-picker-panel__icon-btn.is-disabled:hover {
@@ -935,7 +935,7 @@
   line-height: 30px;
   cursor: pointer; }
   .el-time-spinner__arrow:hover {
-    color: #409EFF; }
+    color: #4099de; }
   .el-time-spinner__arrow.el-icon-arrow-up {
     top: 10px; }
   .el-time-spinner__arrow.el-icon-arrow-down {
@@ -967,7 +967,7 @@
     background: #f5f7fa;
     cursor: pointer; }
   .el-time-spinner__item.active:not(.disabled) {
-    color: #303133;
+    color: #4099de;
     font-weight: bold; }
   .el-time-spinner__item.disabled {
     color: #c0c4cc;
@@ -1148,10 +1148,10 @@
     background-color: transparent;
     outline: none;
     font-size: 12px;
-    color: #303133; }
+    color: #4099de; }
     .el-time-panel__btn.confirm {
       font-weight: 800;
-      color: #409EFF; }
+      color: #4099de; }
 
 /* Element Chalk Variables */
 /* Transition
@@ -1532,8 +1532,8 @@
     color: #606266;
     background-color: #fff;
     background-image: none;
-    border: 1px solid #dcdfe6;
-    border-radius: 4px;
+    border: 1px solid #bacad6;
+    border-radius: 0.5rem;
     -webkit-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
     .el-textarea__inner::-webkit-input-placeholder {
@@ -1546,7 +1546,7 @@
       border-color: #c0c4cc; }
     .el-textarea__inner:focus {
       outline: none;
-      border-color: #409EFF; }
+      border-color: #4099de; }
   .el-textarea.is-disabled .el-textarea__inner {
     background-color: #f5f7fa;
     border-color: #e4e7ed;
@@ -1593,8 +1593,8 @@
     -webkit-appearance: none;
     background-color: #fff;
     background-image: none;
-    border-radius: 4px;
-    border: 1px solid #dcdfe6;
+    border-radius: 0.5rem;
+    border: 1px solid #bacad6;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: #606266;
@@ -1617,7 +1617,7 @@
       border-color: #c0c4cc; }
     .el-input__inner:focus {
       outline: none;
-      border-color: #409EFF; }
+      border-color: #4099de; }
   .el-input__suffix {
     position: absolute;
     height: 100%;
@@ -1656,7 +1656,7 @@
     pointer-events: none; }
   .el-input.is-active .el-input__inner {
     outline: none;
-    border-color: #409EFF; }
+    border-color: #4099de; }
   .el-input.is-disabled .el-input__inner {
     background-color: #f5f7fa;
     border-color: #e4e7ed;
@@ -1707,12 +1707,12 @@
     display: table-cell; }
   .el-input-group__append, .el-input-group__prepend {
     background-color: #f5f7fa;
-    color: #909399;
+    color: #03a9f4;
     vertical-align: middle;
     display: table-cell;
     position: relative;
-    border: 1px solid #dcdfe6;
-    border-radius: 4px;
+    border: 1px solid #bacad6;
+    border-radius: 0.5rem;
     padding: 0 20px;
     width: 1px;
     white-space: nowrap; }

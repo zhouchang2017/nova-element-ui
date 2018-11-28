@@ -1,5 +1,5 @@
 import locale from 'element-ui/lib/locale'
-// import '../../theme/index.css'
+import '../../theme/index.css'
 const mapLocales = {
   'af-ZA': require('element-ui/lib/locale/lang/af-ZA'),
   'ar': require('element-ui/lib/locale/lang/ar'),

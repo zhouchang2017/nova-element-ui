@@ -265,13 +265,13 @@
     padding-right: 0;
     margin-right: 0; }
   .el-progress.is-success .el-progress-bar__inner {
-    background-color: #67c23a; }
+    background-color: #21b978; }
   .el-progress.is-success .el-progress__text {
-    color: #67c23a; }
+    color: #21b978; }
   .el-progress.is-exception .el-progress-bar__inner {
-    background-color: #f56c6c; }
+    background-color: #e74444; }
   .el-progress.is-exception .el-progress__text {
-    color: #f56c6c; }
+    color: #e74444; }
 
 .el-progress-bar {
   padding-right: 50px;
@@ -293,7 +293,7 @@
     left: 0;
     top: 0;
     height: 100%;
-    background-color: #409EFF;
+    background-color: #4099de;
     text-align: right;
     border-radius: 100px;
     line-height: 1;

@@ -614,7 +614,7 @@
     line-height: 32px;
     font-size: 14px;
     width: 5%;
-    color: #303133; }
+    color: #4099de; }
   .el-date-editor .el-range__close-icon {
     font-size: 14px;
     color: #c0c4cc;
@@ -636,9 +636,9 @@
   line-height: 1; }
 
 .el-range-editor.is-active {
-  border-color: #409EFF; }
+  border-color: #4099de; }
   .el-range-editor.is-active:hover {
-    border-color: #409EFF; }
+    border-color: #4099de; }
 
 .el-range-editor--medium.el-input__inner {
   height: 36px; }
@@ -1048,7 +1048,7 @@
   -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   background: #fff;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   line-height: 30px;
   margin: 5px 0; }
   .el-picker-panel__body::after, .el-picker-panel__body-wrapper::after {
@@ -1078,10 +1078,10 @@
     outline: none;
     cursor: pointer; }
     .el-picker-panel__shortcut:hover {
-      color: #409EFF; }
+      color: #4099de; }
     .el-picker-panel__shortcut.active {
       background-color: #e6f1fe;
-      color: #409EFF; }
+      color: #4099de; }
   .el-picker-panel__btn {
     border: 1px solid #dcdcdc;
     color: #333;
@@ -1097,14 +1097,14 @@
       cursor: not-allowed; }
   .el-picker-panel__icon-btn {
     font-size: 12px;
-    color: #303133;
+    color: #4099de;
     border: 0;
     background: transparent;
     cursor: pointer;
     outline: none;
     margin-top: 8px; }
     .el-picker-panel__icon-btn:hover {
-      color: #409EFF; }
+      color: #4099de; }
     .el-picker-panel__icon-btn.is-disabled {
       color: #bbb; }
       .el-picker-panel__icon-btn.is-disabled:hover {
@@ -1173,9 +1173,9 @@
     cursor: pointer;
     color: #606266; }
     .el-date-picker__header-label:hover {
-      color: #409EFF; }
+      color: #4099de; }
     .el-date-picker__header-label.active {
-      color: #409EFF; }
+      color: #4099de; }
   .el-date-picker__prev-btn {
     float: left; }
   .el-date-picker__next-btn {
@@ -1787,7 +1787,7 @@
   line-height: 20px; }
 
 .time-select-item.selected:not(.disabled) {
-  color: #409EFF;
+  color: #4099de;
   font-weight: bold; }
 
 .time-select-item.disabled {

@@ -473,14 +473,14 @@
   user-select: none; }
   .el-checkbox.is-bordered {
     padding: 9px 20px 9px 10px;
-    border-radius: 4px;
-    border: 1px solid #dcdfe6;
+    border-radius: 0.5rem;
+    border: 1px solid #bacad6;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     line-height: normal;
     height: 40px; }
     .el-checkbox.is-bordered.is-checked {
-      border-color: #409EFF; }
+      border-color: #4099de; }
     .el-checkbox.is-bordered.is-disabled {
       border-color: #ebeef5;
       cursor: not-allowed; }
@@ -488,7 +488,7 @@
       margin-left: 10px; }
     .el-checkbox.is-bordered.el-checkbox--medium {
       padding: 7px 20px 7px 10px;
-      border-radius: 4px;
+      border-radius: 0.5rem;
       height: 36px; }
       .el-checkbox.is-bordered.el-checkbox--medium .el-checkbox__label {
         line-height: 17px;
@@ -498,7 +498,7 @@
         width: 14px; }
     .el-checkbox.is-bordered.el-checkbox--small {
       padding: 5px 15px 5px 10px;
-      border-radius: 3px;
+      border-radius: -0.5rem;
       height: 32px; }
       .el-checkbox.is-bordered.el-checkbox--small .el-checkbox__label {
         line-height: 15px;
@@ -511,7 +511,7 @@
           width: 2px; }
     .el-checkbox.is-bordered.el-checkbox--mini {
       padding: 3px 15px 3px 10px;
-      border-radius: 3px;
+      border-radius: -0.5rem;
       height: 28px; }
       .el-checkbox.is-bordered.el-checkbox--mini .el-checkbox__label {
         line-height: 12px;
@@ -532,7 +532,7 @@
     vertical-align: middle; }
     .el-checkbox__input.is-disabled .el-checkbox__inner {
       background-color: #edf2fc;
-      border-color: #dcdfe6;
+      border-color: #bacad6;
       cursor: not-allowed; }
       .el-checkbox__input.is-disabled .el-checkbox__inner::after {
         cursor: not-allowed;
@@ -541,12 +541,12 @@
         cursor: not-allowed; }
     .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
       background-color: #f2f6fc;
-      border-color: #dcdfe6; }
+      border-color: #bacad6; }
       .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after {
         border-color: #c0c4cc; }
     .el-checkbox__input.is-disabled.is-indeterminate .el-checkbox__inner {
       background-color: #f2f6fc;
-      border-color: #dcdfe6; }
+      border-color: #bacad6; }
       .el-checkbox__input.is-disabled.is-indeterminate .el-checkbox__inner::before {
         background-color: #c0c4cc;
         border-color: #c0c4cc; }
@@ -554,20 +554,20 @@
       color: #c0c4cc;
       cursor: not-allowed; }
     .el-checkbox__input.is-checked .el-checkbox__inner {
-      background-color: #409EFF;
-      border-color: #409EFF; }
+      background-color: #4099de;
+      border-color: #4099de; }
       .el-checkbox__input.is-checked .el-checkbox__inner::after {
         -webkit-transform: rotate(45deg) scaleY(1);
         transform: rotate(45deg) scaleY(1); }
     .el-checkbox__input.is-checked + .el-checkbox__label {
-      color: #409EFF; }
+      color: #4099de; }
     .el-checkbox__input.is-focus {
       /*focus时 视觉上区分*/ }
       .el-checkbox__input.is-focus .el-checkbox__inner {
-        border-color: #409EFF; }
+        border-color: #4099de; }
     .el-checkbox__input.is-indeterminate .el-checkbox__inner {
-      background-color: #409EFF;
-      border-color: #409EFF; }
+      background-color: #4099de;
+      border-color: #4099de; }
       .el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
         content: '';
         position: absolute;
@@ -584,8 +584,8 @@
   .el-checkbox__inner {
     display: inline-block;
     position: relative;
-    border: 1px solid #dcdfe6;
-    border-radius: 2px;
+    border: 1px solid #bacad6;
+    border-radius: 0.125rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 14px;
@@ -595,7 +595,7 @@
     -webkit-transition: border-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46), background-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46);
     transition: border-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46), background-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46); }
     .el-checkbox__inner:hover {
-      border-color: #409EFF; }
+      border-color: #4099de; }
     .el-checkbox__inner::after {
       -webkit-box-sizing: content-box;
       box-sizing: content-box;
@@ -643,7 +643,7 @@
     vertical-align: middle;
     cursor: pointer;
     background: #fff;
-    border: 1px solid #dcdfe6;
+    border: 1px solid #bacad6;
     border-left: 0;
     color: #606266;
     -webkit-appearance: none;
@@ -664,7 +664,7 @@
     .el-checkbox-button__inner.is-round {
       padding: 12px 20px; }
     .el-checkbox-button__inner:hover {
-      color: #409EFF; }
+      color: #4099de; }
     .el-checkbox-button__inner [class*="el-icon-"] {
       line-height: 0.9; }
       .el-checkbox-button__inner [class*="el-icon-"] + span {
@@ -677,12 +677,12 @@
     z-index: -1; }
   .el-checkbox-button.is-checked .el-checkbox-button__inner {
     color: #fff;
-    background-color: #409EFF;
-    border-color: #409EFF;
-    -webkit-box-shadow: -1px 0 0 0 #8cc5ff;
-    box-shadow: -1px 0 0 0 #8cc5ff; }
+    background-color: #4099de;
+    border-color: #4099de;
+    -webkit-box-shadow: -1px 0 0 0 #8cc2eb;
+    box-shadow: -1px 0 0 0 #8cc2eb; }
   .el-checkbox-button.is-checked:first-child .el-checkbox-button__inner {
-    border-left-color: #409EFF; }
+    border-left-color: #4099de; }
   .el-checkbox-button.is-disabled .el-checkbox-button__inner {
     color: #c0c4cc;
     cursor: not-allowed;
@@ -694,14 +694,14 @@
   .el-checkbox-button.is-disabled:first-child .el-checkbox-button__inner {
     border-left-color: #ebeef5; }
   .el-checkbox-button:first-child .el-checkbox-button__inner {
-    border-left: 1px solid #dcdfe6;
-    border-radius: 4px 0 0 4px;
+    border-left: 1px solid #bacad6;
+    border-radius: 0.5rem 0 0 0.5rem;
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
   .el-checkbox-button.is-focus .el-checkbox-button__inner {
-    border-color: #409EFF; }
+    border-color: #4099de; }
   .el-checkbox-button:last-child .el-checkbox-button__inner {
-    border-radius: 0 4px 4px 0; }
+    border-radius: 0 0.5rem 0.5rem 0; }
   .el-checkbox-button--medium .el-checkbox-button__inner {
     padding: 10px 20px;
     font-size: 14px;
@@ -955,17 +955,17 @@
 /* Break-point
 --------------------------*/
 .el-tag {
-  background-color: rgba(64, 158, 255, 0.1);
+  background-color: rgba(64, 153, 222, 0.1);
   display: inline-block;
   padding: 0 10px;
   height: 32px;
   line-height: 30px;
   font-size: 12px;
-  color: #409EFF;
+  color: #4099de;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid rgba(64, 158, 255, 0.2);
+  border: 1px solid rgba(64, 153, 222, 0.2);
   white-space: nowrap; }
   .el-tag .el-icon-close {
     border-radius: 50%;
@@ -979,55 +979,55 @@
     vertical-align: middle;
     top: -1px;
     right: -5px;
-    color: #409EFF; }
+    color: #4099de; }
     .el-tag .el-icon-close::before {
       display: block; }
     .el-tag .el-icon-close:hover {
-      background-color: #409EFF;
+      background-color: #4099de;
       color: #fff; }
   .el-tag--info {
-    background-color: rgba(144, 147, 153, 0.1);
-    border-color: rgba(144, 147, 153, 0.2);
-    color: #909399; }
+    background-color: rgba(3, 169, 244, 0.1);
+    border-color: rgba(3, 169, 244, 0.2);
+    color: #03a9f4; }
     .el-tag--info.is-hit {
-      border-color: #909399; }
+      border-color: #03a9f4; }
     .el-tag--info .el-tag__close {
-      color: #909399; }
+      color: #03a9f4; }
     .el-tag--info .el-tag__close:hover {
-      background-color: #909399;
+      background-color: #03a9f4;
       color: #fff; }
   .el-tag--success {
-    background-color: rgba(103, 194, 58, 0.1);
-    border-color: rgba(103, 194, 58, 0.2);
-    color: #67c23a; }
+    background-color: rgba(33, 185, 120, 0.1);
+    border-color: rgba(33, 185, 120, 0.2);
+    color: #21b978; }
     .el-tag--success.is-hit {
-      border-color: #67c23a; }
+      border-color: #21b978; }
     .el-tag--success .el-tag__close {
-      color: #67c23a; }
+      color: #21b978; }
     .el-tag--success .el-tag__close:hover {
-      background-color: #67c23a;
+      background-color: #21b978;
       color: #fff; }
   .el-tag--warning {
-    background-color: rgba(230, 162, 60, 0.1);
-    border-color: rgba(230, 162, 60, 0.2);
-    color: #e6a23c; }
+    background-color: rgba(255, 235, 59, 0.1);
+    border-color: rgba(255, 235, 59, 0.2);
+    color: #ffeb3b; }
     .el-tag--warning.is-hit {
-      border-color: #e6a23c; }
+      border-color: #ffeb3b; }
     .el-tag--warning .el-tag__close {
-      color: #e6a23c; }
+      color: #ffeb3b; }
     .el-tag--warning .el-tag__close:hover {
-      background-color: #e6a23c;
+      background-color: #ffeb3b;
       color: #fff; }
   .el-tag--danger {
-    background-color: rgba(245, 108, 108, 0.1);
-    border-color: rgba(245, 108, 108, 0.2);
-    color: #f56c6c; }
+    background-color: rgba(231, 68, 68, 0.1);
+    border-color: rgba(231, 68, 68, 0.2);
+    color: #e74444; }
     .el-tag--danger.is-hit {
-      border-color: #f56c6c; }
+      border-color: #e74444; }
     .el-tag--danger .el-tag__close {
-      color: #f56c6c; }
+      color: #e74444; }
     .el-tag--danger .el-tag__close:hover {
-      background-color: #f56c6c;
+      background-color: #e74444;
       color: #fff; }
   .el-tag--medium {
     height: 28px;
@@ -1310,67 +1310,67 @@
     margin-bottom: 12px; }
   .el-tooltip__popper[x-placement^="top"] .popper__arrow {
     bottom: -6px;
-    border-top-color: #303133;
+    border-top-color: #4099de;
     border-bottom-width: 0; }
     .el-tooltip__popper[x-placement^="top"] .popper__arrow::after {
       bottom: 1px;
       margin-left: -5px;
-      border-top-color: #303133;
+      border-top-color: #4099de;
       border-bottom-width: 0; }
   .el-tooltip__popper[x-placement^="bottom"] {
     margin-top: 12px; }
   .el-tooltip__popper[x-placement^="bottom"] .popper__arrow {
     top: -6px;
     border-top-width: 0;
-    border-bottom-color: #303133; }
+    border-bottom-color: #4099de; }
     .el-tooltip__popper[x-placement^="bottom"] .popper__arrow::after {
       top: 1px;
       margin-left: -5px;
       border-top-width: 0;
-      border-bottom-color: #303133; }
+      border-bottom-color: #4099de; }
   .el-tooltip__popper[x-placement^="right"] {
     margin-left: 12px; }
   .el-tooltip__popper[x-placement^="right"] .popper__arrow {
     left: -6px;
-    border-right-color: #303133;
+    border-right-color: #4099de;
     border-left-width: 0; }
     .el-tooltip__popper[x-placement^="right"] .popper__arrow::after {
       bottom: -5px;
       left: 1px;
-      border-right-color: #303133;
+      border-right-color: #4099de;
       border-left-width: 0; }
   .el-tooltip__popper[x-placement^="left"] {
     margin-right: 12px; }
   .el-tooltip__popper[x-placement^="left"] .popper__arrow {
     right: -6px;
     border-right-width: 0;
-    border-left-color: #303133; }
+    border-left-color: #4099de; }
     .el-tooltip__popper[x-placement^="left"] .popper__arrow::after {
       right: 1px;
       bottom: -5px;
       margin-left: -5px;
       border-right-width: 0;
-      border-left-color: #303133; }
+      border-left-color: #4099de; }
   .el-tooltip__popper.is-dark {
-    background: #303133;
+    background: #4099de;
     color: #fff; }
   .el-tooltip__popper.is-light {
     background: #fff;
-    border: 1px solid #303133; }
+    border: 1px solid #4099de; }
     .el-tooltip__popper.is-light[x-placement^="top"] .popper__arrow {
-      border-top-color: #303133; }
+      border-top-color: #4099de; }
       .el-tooltip__popper.is-light[x-placement^="top"] .popper__arrow::after {
         border-top-color: #fff; }
     .el-tooltip__popper.is-light[x-placement^="bottom"] .popper__arrow {
-      border-bottom-color: #303133; }
+      border-bottom-color: #4099de; }
       .el-tooltip__popper.is-light[x-placement^="bottom"] .popper__arrow::after {
         border-bottom-color: #fff; }
     .el-tooltip__popper.is-light[x-placement^="left"] .popper__arrow {
-      border-left-color: #303133; }
+      border-left-color: #4099de; }
       .el-tooltip__popper.is-light[x-placement^="left"] .popper__arrow::after {
         border-left-color: #fff; }
     .el-tooltip__popper.is-light[x-placement^="right"] .popper__arrow {
-      border-right-color: #303133; }
+      border-right-color: #4099de; }
       .el-tooltip__popper.is-light[x-placement^="right"] .popper__arrow::after {
         border-right-color: #fff; }
 
@@ -1622,7 +1622,7 @@
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
       .el-table th > .cell.highlight {
-        color: #409EFF; }
+        color: #4099de; }
     .el-table th.required > div::before {
       display: inline-block;
       content: "";
@@ -1796,9 +1796,9 @@
       border-top-color: #c0c4cc;
       bottom: 7px; }
   .el-table .ascending .sort-caret.ascending {
-    border-bottom-color: #409EFF; }
+    border-bottom-color: #4099de; }
   .el-table .descending .sort-caret.descending {
-    border-top-color: #409EFF; }
+    border-top-color: #4099de; }
   .el-table .hidden-columns {
     visibility: hidden;
     position: absolute;
@@ -1806,11 +1806,11 @@
   .el-table--striped .el-table__body tr.el-table__row--striped td {
     background: #FAFAFA; }
   .el-table--striped .el-table__body tr.el-table__row--striped.current-row td {
-    background-color: #ecf5ff; }
+    background-color: #ecf5fc; }
   .el-table__body tr.hover-row > td, .el-table__body tr.hover-row.current-row > td, .el-table__body tr.hover-row.el-table__row--striped > td, .el-table__body tr.hover-row.el-table__row--striped.current-row > td {
-    background-color: #ecf5ff; }
+    background-color: #ecf5fc; }
   .el-table__body tr.current-row > td {
-    background-color: #ecf5ff; }
+    background-color: #ecf5fc; }
   .el-table__column-resize-proxy {
     position: absolute;
     left: 200px;
@@ -1824,7 +1824,7 @@
     line-height: 34px;
     cursor: pointer; }
     .el-table__column-filter-trigger i {
-      color: #909399;
+      color: #03a9f4;
       font-size: 12px;
       -webkit-transform: scale(0.75);
       transform: scale(0.75); }
