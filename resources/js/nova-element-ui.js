@@ -68,6 +68,8 @@ import {
   Dialog,
   Steps,
   Step,
+  Loading,
+  Notification
 } from 'element-ui'
 
 Nova.booting(function (Vue, router) {
@@ -91,4 +93,16 @@ Nova.booting(function (Vue, router) {
   Vue.use(Dialog)
   Vue.use(Steps)
   Vue.use(Step)
+
+  Vue.use(Loading.directive)
+
+  Vue.prototype.$notify = Notification
+
+  Vue.prototype.$toasted = {
+    show (message, obj) {
+      return Notification({
+        message, ...obj
+      })
+    }
+  }
 })
