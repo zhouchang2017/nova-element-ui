@@ -104,7 +104,7 @@ Nova.booting(function (Vue, router) {
   Vue.use(TableColumn)
 
   Vue.use(Alert)
-  Vue.use(Message)
+  // Vue.use(Message)
   Vue.use(Loading.directive)
 
   Vue.prototype.$notify = Notification
