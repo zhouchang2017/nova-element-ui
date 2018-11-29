@@ -52,7 +52,7 @@ $--link-hover-color: $--color-primary !default;
 
 /* Background
 -------------------------- */
-$--background-color-base: #f5f7fa !default;
+$--background-color-base: #f6fbff !default;
 
 /* Border
 -------------------------- */
@@ -60,7 +60,7 @@ $--border-width-base: 1px !default;
 $--border-style-base: solid !default;
 $--border-color-base: #bacad6 !default;
 $--border-color-light: #e4e7ed !default;
-$--border-color-lighter: #ebeef5 !default;
+$--border-color-lighter: #e3e7eb !default;
 $--border-color-extra-light: #f2f6fc !default;
 $--border-color-hover: $--color-text-placeholder !default;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
@@ -80,13 +80,14 @@ $--fill-base: $--color-white !default;
 
 /* Font
 -------------------------- */
-$--font-path: 'fonts' !default;
+$--font-path: '~element-ui/lib/theme-chalk/fonts' !default;
 $--font-size-base: 14px !default;
 $--font-size-small: 13px !default;
 $--font-size-large: 18px !default;
 $--font-color-disabled-base: #bbb !default;
 $--font-weight-primary: 500 !default;
 $--font-line-height-primary: 24px !default;
+
 
 /* Size
 -------------------------- */
@@ -478,11 +479,15 @@ $--dialog-padding-primary: 0px !default;
 $--table-border-color: $--border-color-lighter !default;
 $--table-border: 1px solid $--table-border-color !default;
 $--table-text-color: $--color-text-regular !default;
-$--table-header-color: $--color-text-secondary !default;
+//$--table-header-color: $--color-text-secondary !default;
+$--table-header-color: #7c858e !default;
+//$--table-row-hover-background: $--background-color-base !default;
 $--table-row-hover-background: $--background-color-base !default;
 $--table-current-row-background: $--color-primary-light-9 !default;
-$--table-header-background: $--color-white !default;
-$--table-footer-background: $--color-text-placeholder !default;
+//$--table-header-background: $--color-white !default;
+$--table-header-background: #f4f7fa  !default;
+//$--table-footer-background: $--color-text-placeholder !default;
+$--table-footer-background: #f4f7fa !default;
 $--table-fixed-box-shadow: 0 0 10px rgba(0, 0, 0, .12) !default;
 
 /* Pagination
@@ -711,3 +716,5 @@ $--breakpoints-spec: (
   'lg-and-down': (max-width: $--xl - 1),
   'xl-only' : (min-width: $--xl),
 );
+
+@import "~element-ui/packages/theme-chalk/src/index";

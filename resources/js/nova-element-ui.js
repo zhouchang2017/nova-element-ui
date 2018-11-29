@@ -1,5 +1,7 @@
 import locale from 'element-ui/lib/locale'
-import '../../theme/index.css'
+// import '../../theme/index.css'
+import '../../element-variables.scss'
+
 const mapLocales = {
   'af-ZA': require('element-ui/lib/locale/lang/af-ZA'),
   'ar': require('element-ui/lib/locale/lang/ar'),
@@ -69,7 +71,11 @@ import {
   Steps,
   Step,
   Loading,
-  Notification
+  Notification,
+  Table,
+  TableColumn,
+  Alert,
+  Message
 } from 'element-ui'
 
 Nova.booting(function (Vue, router) {
@@ -94,10 +100,15 @@ Nova.booting(function (Vue, router) {
   Vue.use(Steps)
   Vue.use(Step)
 
+  Vue.use(Table)
+  Vue.use(TableColumn)
+
+  Vue.use(Alert)
+  Vue.use(Message)
   Vue.use(Loading.directive)
 
   Vue.prototype.$notify = Notification
-
+  Vue.prototype.$message = Message;
   Vue.prototype.$toasted = {
     show (message, obj) {
       return Notification({

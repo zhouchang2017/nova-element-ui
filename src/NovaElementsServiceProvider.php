@@ -14,7 +14,7 @@ class NovaElementsServiceProvider extends ServiceProvider
 //                __DIR__.'/../vendor/nova-element-ui/dist' => public_path('vendor/nova-element-ui'),
 //            ], 'public');
             $this->publishes([
-                __DIR__.'/../fonts/vendor/element-ui/lib/theme-chalk' => public_path('fonts'),
+                __DIR__.'/../dist/fonts' => public_path('fonts'),
             ], 'public');
         }
 
