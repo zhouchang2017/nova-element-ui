@@ -75,7 +75,9 @@ import {
   Table,
   TableColumn,
   Alert,
-  Message
+  Message,
+  Button,
+  ButtonGroup
 } from 'element-ui'
 
 Nova.booting(function (Vue, router) {
@@ -103,12 +105,15 @@ Nova.booting(function (Vue, router) {
   Vue.use(Table)
   Vue.use(TableColumn)
 
+  Vue.use(Button)
+  Vue.use(ButtonGroup)
+
   Vue.use(Alert)
   // Vue.use(Message)
   Vue.use(Loading.directive)
 
   Vue.prototype.$notify = Notification
-  Vue.prototype.$message = Message;
+  Vue.prototype.$message = Message
   Vue.prototype.$toasted = {
     show (message, obj) {
       return Notification({
