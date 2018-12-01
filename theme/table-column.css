@@ -482,7 +482,7 @@
     .el-checkbox.is-bordered.is-checked {
       border-color: #4099de; }
     .el-checkbox.is-bordered.is-disabled {
-      border-color: #ebeef5;
+      border-color: #e3e7eb;
       cursor: not-allowed; }
     .el-checkbox.is-bordered + .el-checkbox.is-bordered {
       margin-left: 10px; }
@@ -688,11 +688,11 @@
     cursor: not-allowed;
     background-image: none;
     background-color: #fff;
-    border-color: #ebeef5;
+    border-color: #e3e7eb;
     -webkit-box-shadow: none;
     box-shadow: none; }
   .el-checkbox-button.is-disabled:first-child .el-checkbox-button__inner {
-    border-left-color: #ebeef5; }
+    border-left-color: #e3e7eb; }
   .el-checkbox-button:first-child .el-checkbox-button__inner {
     border-left: 1px solid #bacad6;
     border-radius: 0.5rem 0 0 0.5rem;
@@ -1166,7 +1166,7 @@
   padding-right: 14px; }
 
 .el-table-filter {
-  border: solid 1px #ebeef5;
+  border: solid 1px #e3e7eb;
   border-radius: 2px;
   background-color: #fff;
   -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
@@ -1194,7 +1194,7 @@
   .el-table-filter__content {
     min-width: 100px; }
   .el-table-filter__bottom {
-    border-top: 1px solid #ebeef5;
+    border-top: 1px solid #e3e7eb;
     padding: 8px; }
     .el-table-filter__bottom button {
       background: transparent;

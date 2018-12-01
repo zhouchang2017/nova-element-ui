@@ -455,8 +455,8 @@
   transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
 
 .el-collapse {
-  border-top: 1px solid #ebeef5;
-  border-bottom: 1px solid #ebeef5; }
+  border-top: 1px solid #e3e7eb;
+  border-bottom: 1px solid #e3e7eb; }
 
 .el-collapse-item__header {
   display: -webkit-box;
@@ -470,7 +470,7 @@
   background-color: #fff;
   color: #4099de;
   cursor: pointer;
-  border-bottom: 1px solid #ebeef5;
+  border-bottom: 1px solid #e3e7eb;
   font-size: 13px;
   font-weight: 500;
   -webkit-transition: border-bottom-color .3s;
@@ -497,7 +497,7 @@
   overflow: hidden;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-bottom: 1px solid #ebeef5; }
+  border-bottom: 1px solid #e3e7eb; }
 
 .el-collapse-item__content {
   padding-bottom: 25px;

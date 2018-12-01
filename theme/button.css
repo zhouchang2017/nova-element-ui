@@ -395,12 +395,12 @@
     cursor: not-allowed;
     background-image: none;
     background-color: #fff;
-    border-color: #ebeef5; }
+    border-color: #e3e7eb; }
   .el-button.is-disabled.el-button--text {
     background-color: transparent; }
   .el-button.is-disabled.is-plain, .el-button.is-disabled.is-plain:hover, .el-button.is-disabled.is-plain:focus {
     background-color: #fff;
-    border-color: #ebeef5;
+    border-color: #e3e7eb;
     color: #c0c4cc; }
   .el-button.is-loading {
     position: relative;

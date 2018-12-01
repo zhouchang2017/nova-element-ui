@@ -284,7 +284,7 @@
   .el-progress-bar__outer {
     height: 6px;
     border-radius: 100px;
-    background-color: #ebeef5;
+    background-color: #e3e7eb;
     overflow: hidden;
     position: relative;
     vertical-align: middle; }

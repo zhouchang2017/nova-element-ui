@@ -625,12 +625,12 @@
     cursor: not-allowed;
     background-image: none;
     background-color: #fff;
-    border-color: #ebeef5; }
+    border-color: #e3e7eb; }
   .el-button.is-disabled.el-button--text {
     background-color: transparent; }
   .el-button.is-disabled.is-plain, .el-button.is-disabled.is-plain:hover, .el-button.is-disabled.is-plain:focus {
     background-color: #fff;
-    border-color: #ebeef5;
+    border-color: #e3e7eb;
     color: #c0c4cc; }
   .el-button.is-loading {
     position: relative;
@@ -1216,7 +1216,7 @@
   bottom: -6px;
   left: 50%;
   margin-right: 3px;
-  border-top-color: #ebeef5;
+  border-top-color: #e3e7eb;
   border-bottom-width: 0; }
   .el-popper[x-placement^="top"] .popper__arrow::after {
     bottom: 1px;
@@ -1232,7 +1232,7 @@
   left: 50%;
   margin-right: 3px;
   border-top-width: 0;
-  border-bottom-color: #ebeef5; }
+  border-bottom-color: #e3e7eb; }
   .el-popper[x-placement^="bottom"] .popper__arrow::after {
     top: 1px;
     margin-left: -6px;
@@ -1246,7 +1246,7 @@
   top: 50%;
   left: -6px;
   margin-bottom: 3px;
-  border-right-color: #ebeef5;
+  border-right-color: #e3e7eb;
   border-left-width: 0; }
   .el-popper[x-placement^="right"] .popper__arrow::after {
     bottom: -6px;
@@ -1262,7 +1262,7 @@
   right: -6px;
   margin-bottom: 3px;
   border-right-width: 0;
-  border-left-color: #ebeef5; }
+  border-left-color: #e3e7eb; }
   .el-popper[x-placement^="left"] .popper__arrow::after {
     right: 1px;
     bottom: -6px;
@@ -1312,7 +1312,7 @@
   padding: 10px 0;
   margin: 5px 0;
   background-color: #fff;
-  border: 1px solid #ebeef5;
+  border: 1px solid #e3e7eb;
   border-radius: 0.5rem;
   -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
@@ -1331,7 +1331,7 @@
     .el-dropdown-menu__item--divided {
       position: relative;
       margin-top: 6px;
-      border-top: 1px solid #ebeef5; }
+      border-top: 1px solid #e3e7eb; }
       .el-dropdown-menu__item--divided:before {
         content: '';
         height: 6px;

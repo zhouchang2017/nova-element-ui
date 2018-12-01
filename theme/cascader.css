@@ -491,7 +491,7 @@
       outline: none;
       border-color: #4099de; }
   .el-textarea.is-disabled .el-textarea__inner {
-    background-color: #f5f7fa;
+    background-color: #f6fbff;
     border-color: #e4e7ed;
     color: #c0c4cc;
     cursor: not-allowed; }
@@ -601,7 +601,7 @@
     outline: none;
     border-color: #4099de; }
   .el-input.is-disabled .el-input__inner {
-    background-color: #f5f7fa;
+    background-color: #f6fbff;
     border-color: #e4e7ed;
     color: #c0c4cc;
     cursor: not-allowed; }
@@ -649,7 +649,7 @@
     vertical-align: middle;
     display: table-cell; }
   .el-input-group__append, .el-input-group__prepend {
-    background-color: #f5f7fa;
+    background-color: #f6fbff;
     color: #03a9f4;
     vertical-align: middle;
     display: table-cell;
@@ -960,7 +960,7 @@
   bottom: -6px;
   left: 50%;
   margin-right: 3px;
-  border-top-color: #ebeef5;
+  border-top-color: #e3e7eb;
   border-bottom-width: 0; }
   .el-popper[x-placement^="top"] .popper__arrow::after {
     bottom: 1px;
@@ -976,7 +976,7 @@
   left: 50%;
   margin-right: 3px;
   border-top-width: 0;
-  border-bottom-color: #ebeef5; }
+  border-bottom-color: #e3e7eb; }
   .el-popper[x-placement^="bottom"] .popper__arrow::after {
     top: 1px;
     margin-left: -6px;
@@ -990,7 +990,7 @@
   top: 50%;
   left: -6px;
   margin-bottom: 3px;
-  border-right-color: #ebeef5;
+  border-right-color: #e3e7eb;
   border-left-width: 0; }
   .el-popper[x-placement^="right"] .popper__arrow::after {
     bottom: -6px;
@@ -1006,7 +1006,7 @@
   right: -6px;
   margin-bottom: 3px;
   border-right-width: 0;
-  border-left-color: #ebeef5; }
+  border-left-color: #e3e7eb; }
   .el-popper[x-placement^="left"] .popper__arrow::after {
     right: 1px;
     bottom: -6px;
@@ -1131,10 +1131,10 @@
     .el-cascader-menu__item.is-active {
       color: #4099de; }
     .el-cascader-menu__item:hover, .el-cascader-menu__item:focus:not(:active) {
-      background-color: #f5f7fa; }
+      background-color: #f6fbff; }
     .el-cascader-menu__item.selected {
       color: #fff;
-      background-color: #f5f7fa; }
+      background-color: #f6fbff; }
   .el-cascader-menu__item__keyword {
     font-weight: bold; }
   .el-cascader-menu--flexible {

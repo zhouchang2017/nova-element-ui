@@ -363,7 +363,7 @@
       border-color: #4099de; }
     .el-radio.is-bordered.is-disabled {
       cursor: not-allowed;
-      border-color: #ebeef5; }
+      border-color: #e3e7eb; }
     .el-radio.is-bordered + .el-radio.is-bordered {
       margin-left: 10px; }
   .el-radio--medium.is-bordered {
@@ -404,16 +404,16 @@
     position: relative;
     vertical-align: middle; }
     .el-radio__input.is-disabled .el-radio__inner {
-      background-color: #f5f7fa;
+      background-color: #f6fbff;
       border-color: #e4e7ed;
       cursor: not-allowed; }
       .el-radio__input.is-disabled .el-radio__inner::after {
         cursor: not-allowed;
-        background-color: #f5f7fa; }
+        background-color: #f6fbff; }
       .el-radio__input.is-disabled .el-radio__inner + .el-radio__label {
         cursor: not-allowed; }
     .el-radio__input.is-disabled.is-checked .el-radio__inner {
-      background-color: #f5f7fa;
+      background-color: #f6fbff;
       border-color: #e4e7ed; }
       .el-radio__input.is-disabled.is-checked .el-radio__inner::after {
         background-color: #c0c4cc; }

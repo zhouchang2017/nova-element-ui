@@ -395,7 +395,7 @@
       cursor: not-allowed;
       background-image: none;
       background-color: #fff;
-      border-color: #ebeef5;
+      border-color: #e3e7eb;
       -webkit-box-shadow: none;
       box-shadow: none; }
     .el-radio-button__orig-radio:disabled:checked + .el-radio-button__inner {

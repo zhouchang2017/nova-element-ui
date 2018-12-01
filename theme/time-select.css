@@ -683,14 +683,14 @@
   line-height: 20px; }
 
 .el-range-editor.is-disabled {
-  background-color: #f5f7fa;
+  background-color: #f6fbff;
   border-color: #e4e7ed;
   color: #c0c4cc;
   cursor: not-allowed; }
   .el-range-editor.is-disabled:hover, .el-range-editor.is-disabled:focus {
     border-color: #e4e7ed; }
   .el-range-editor.is-disabled input {
-    background-color: #f5f7fa;
+    background-color: #f6fbff;
     color: #c0c4cc;
     cursor: not-allowed; }
     .el-range-editor.is-disabled input::-webkit-input-placeholder {
@@ -1161,7 +1161,7 @@
     .el-date-picker__header--bordered {
       margin-bottom: 0;
       padding-bottom: 12px;
-      border-bottom: solid 1px #ebeef5; }
+      border-bottom: solid 1px #e3e7eb; }
       .el-date-picker__header--bordered + .el-picker-panel__content {
         margin-top: 0; }
   .el-date-picker__header-label {
@@ -1719,7 +1719,7 @@
   bottom: -6px;
   left: 50%;
   margin-right: 3px;
-  border-top-color: #ebeef5;
+  border-top-color: #e3e7eb;
   border-bottom-width: 0; }
   .el-popper[x-placement^="top"] .popper__arrow::after {
     bottom: 1px;
@@ -1735,7 +1735,7 @@
   left: 50%;
   margin-right: 3px;
   border-top-width: 0;
-  border-bottom-color: #ebeef5; }
+  border-bottom-color: #e3e7eb; }
   .el-popper[x-placement^="bottom"] .popper__arrow::after {
     top: 1px;
     margin-left: -6px;
@@ -1749,7 +1749,7 @@
   top: 50%;
   left: -6px;
   margin-bottom: 3px;
-  border-right-color: #ebeef5;
+  border-right-color: #e3e7eb;
   border-left-width: 0; }
   .el-popper[x-placement^="right"] .popper__arrow::after {
     bottom: -6px;
@@ -1765,7 +1765,7 @@
   right: -6px;
   margin-bottom: 3px;
   border-right-width: 0;
-  border-left-color: #ebeef5; }
+  border-left-color: #e3e7eb; }
   .el-popper[x-placement^="left"] .popper__arrow::after {
     right: 1px;
     bottom: -6px;
@@ -1795,6 +1795,6 @@
   cursor: not-allowed; }
 
 .time-select-item:hover {
-  background-color: #f5f7fa;
+  background-color: #f6fbff;
   font-weight: bold;
   cursor: pointer; }

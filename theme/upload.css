@@ -405,7 +405,7 @@
   .el-progress-bar__outer {
     height: 6px;
     border-radius: 100px;
-    background-color: #ebeef5;
+    background-color: #e3e7eb;
     overflow: hidden;
     position: relative;
     vertical-align: middle; }
@@ -684,7 +684,7 @@
       opacity: 1;
       color: #4099de; }
     .el-upload-list__item:hover {
-      background-color: #f5f7fa; }
+      background-color: #f6fbff; }
       .el-upload-list__item:hover .el-icon-close {
         display: inline-block; }
       .el-upload-list__item:hover .el-progress__text {

@@ -77,7 +77,10 @@ import {
   Alert,
   Message,
   Button,
-  ButtonGroup
+  ButtonGroup,
+  Cascader,
+  Form,
+  FormItem,
 } from 'element-ui'
 
 Nova.booting(function (Vue, router) {
@@ -108,7 +111,13 @@ Nova.booting(function (Vue, router) {
   Vue.use(Button)
   Vue.use(ButtonGroup)
 
+  Vue.use(Cascader)
+
   Vue.use(Alert)
+
+  Vue.use(Form)
+  Vue.use(FormItem)
+
   // Vue.use(Message)
   Vue.use(Loading.directive)
 

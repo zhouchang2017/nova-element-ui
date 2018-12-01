@@ -421,7 +421,7 @@
   .el-tabs--border-card > .el-tabs__content {
     padding: 15px; }
   .el-tabs--border-card > .el-tabs__header {
-    background-color: #f5f7fa;
+    background-color: #f6fbff;
     border-bottom: 1px solid #e4e7ed;
     margin: 0; }
   .el-tabs--border-card > .el-tabs__header .el-tabs__nav-wrap::after {
