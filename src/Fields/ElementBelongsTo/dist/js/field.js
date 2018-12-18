@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -176,57 +176,33 @@ module.exports = function normalizeComponent (
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  computed: {
-    name: function name() {
-      return _.get(this, 'field.value.name', '-');
-    },
-    id: function id() {
-      return _.get(this, 'field.value.id');
-    },
-    eventKey: function eventKey() {
-      return _.get(this, 'field.eventKey', this.field.attribute + '-value-change');
-    }
-  }
-};
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(3);
+__webpack_require__(2);
 module.exports = __webpack_require__(14);
 
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Nova.booting(function (Vue, router) {
-  Vue.component('index-element-cascader', __webpack_require__(4));
-  Vue.component('detail-element-cascader', __webpack_require__(7));
-  Vue.component('form-element-cascader', __webpack_require__(10));
+  Vue.component('index-element-belongs-to-field', __webpack_require__(3));
+  Vue.component('detail-element-belongs-to-field', __webpack_require__(6));
+  Vue.component('form-element-belongs-to-field', __webpack_require__(9));
 });
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(5)
+var __vue_script__ = __webpack_require__(4)
 /* template */
-var __vue_template__ = __webpack_require__(6)
+var __vue_template__ = __webpack_require__(5)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -265,7 +241,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -274,30 +250,69 @@ module.exports = Component.exports
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-var _helper = __webpack_require__(1);
-
-var _helper2 = _interopRequireDefault(_helper);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-  props: ['resourceName', 'field'],
-  mixins: [_helper2.default]
-}; //
-//
-//
-//
+  props: ['resourceName', 'field']
+};
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("span", [_vm._v(_vm._s(_vm.name))])
+  return _c("span", [
+    _vm.field.value
+      ? _c(
+          "span",
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "no-underline dim text-primary font-bold",
+                attrs: {
+                  to: {
+                    name: "detail",
+                    params: {
+                      resourceName: _vm.field.resourceName,
+                      resourceId: _vm.field.belongsToId
+                    }
+                  }
+                }
+              },
+              [
+                _vm._v(
+                  "\n            " + _vm._s(_vm.field.value) + "\n        "
+                )
+              ]
+            )
+          ],
+          1
+        )
+      : _c("span", [_vm._v("—")])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -310,15 +325,15 @@ if (false) {
 }
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(8)
+var __vue_script__ = __webpack_require__(7)
 /* template */
-var __vue_template__ = __webpack_require__(9)
+var __vue_template__ = __webpack_require__(8)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -357,7 +372,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -366,54 +381,26 @@ module.exports = Component.exports
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+//
+//
+//
+//
 
-var _helper = __webpack_require__(1);
-
-var _helper2 = _interopRequireDefault(_helper);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-  mixins: [_helper2.default],
-  props: ['resource', 'resourceName', 'resourceId', 'field'],
+  props: ['resource', 'resourceName', 'resourceId', 'field']
 
-  computed: {
-    currentName: function currentName() {
-      return _.get(this, 'field.value.name', '-');
-    }
-  },
-  watch: {
-    id: {
-      handler: function handler(value, oldValue) {
-        if (value && value !== oldValue) {
-          Nova.$emit(this.eventKey, value);
-        }
-      },
-      immediate: true
-    }
-  }
-}; //
-//
-//
-//
-//
-//
+};
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("panel-item", { attrs: { field: _vm.field } }, [
-    _c(
-      "p",
-      { staticClass: "text-90", attrs: { slot: "value" }, slot: "value" },
-      [_vm._v(_vm._s(_vm.currentName))]
-    )
-  ])
+  return _c("div")
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -426,13 +413,13 @@ if (false) {
 }
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(11)
+var __vue_script__ = __webpack_require__(10)
 /* template */
 var __vue_template__ = __webpack_require__(13)
 /* template functional */
@@ -473,7 +460,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -483,98 +470,293 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _laravelNova = __webpack_require__(12);
+var _BelongsToFieldStorage = __webpack_require__(12);
+
+var _BelongsToFieldStorage2 = _interopRequireDefault(_BelongsToFieldStorage);
+
+var _laravelNova = __webpack_require__(11);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
-  mixins: [_laravelNova.FormField, _laravelNova.HandlesValidationErrors],
-
-  props: ['resourceName', 'resourceId', 'field'],
-
+  mixins: [_laravelNova.TogglesTrashed, _laravelNova.PerformsSearches, _laravelNova.HandlesValidationErrors],
+  props: {
+    resourceName: String,
+    field: Object,
+    viaResource: {},
+    viaResourceId: {},
+    viaRelationship: {}
+  },
   data: function data() {
     return {
-      optionConfig: {
-        value: 'id',
-        label: 'name'
-      },
-      options: [],
-      formatValue: []
+      loading: false,
+      availableResources: [],
+      initializingWithExistingResource: false,
+      selectedResource: null,
+      selectedResourceId: null,
+      softDeletes: false,
+      withTrashed: false,
+      search: ''
     };
   },
 
 
   watch: {
-    currentValue: {
-      handler: function handler(value, oldValue) {
-        if (value && value !== oldValue) {
-          Nova.$emit(this.eventKey, value);
+    selectedResource: {
+      handler: function handler(value) {
+        if (value) {
+          Nova.$emit(this.eventKey, this.selectedResource);
         }
-      },
-      immediate: false
+      }
     }
   },
+
+  /**
+   * Mount the component.
+   */
+  mounted: function mounted() {
+    this.initializeComponent();
+  },
+
 
   methods: {
-    /*
-     * Set the initial, internal value for the field.
-     */
-    setInitialValue: function setInitialValue() {
-      this.value = this.field.value || '';
-      this.formatValue = this.field.formatValue || [];
-      this.options = this.field.options || [];
+    initializeComponent: function initializeComponent() {
+      var _this = this;
+
+      this.withTrashed = false;
+
+      // If a user is editing an existing resource with this relation
+      // we'll have a belongsToId on the field, and we should prefill
+      // that resource in this field
+      if (this.editingExistingResource) {
+        this.initializingWithExistingResource = true;
+        this.selectedResourceId = this.field.belongsToId;
+      }
+
+      // If the user is creating this resource via a related resource's index
+      // page we'll have a viaResource and viaResourceId in the params and
+      // should prefill the resource in this field with that information
+      if (this.creatingViaRelatedResource) {
+        this.initializingWithExistingResource = true;
+        this.selectedResourceId = this.viaResourceId;
+      }
+
+      if (this.shouldSelectInitialResource && !this.isSearchable) {
+        // If we should select the initial resource but the field is not
+        // searchable we should load all of the available resources into the
+        // field first and select the initial option
+        this.initializingWithExistingResource = false;
+        this.getAvailableResources().then(function () {
+          return _this.selectInitialResource();
+        });
+      } else if (this.shouldSelectInitialResource && this.isSearchable) {
+        // If we should select the initial resource and the field is
+        // searchable, we won't load all the resources but we will select
+        // the initial option
+        this.getAvailableResources().then(function () {
+          return _this.selectInitialResource();
+        });
+      } else if (!this.shouldSelectInitialResource && !this.isSearchable) {
+        // If we don't need to select an initial resource because the user
+        // came to create a resource directly and there's no parent resource,
+        // and the field is searchable we'll just load all of the resources
+        this.getAvailableResources();
+      }
+
+      this.determineIfSoftDeletes();
+
+      this.field.fill = this.fill;
     },
 
 
     /**
-     * Fill the given FormData object with the field's internal value.
+     * Select a resource using the <select> control
+     */
+    selectResourceFromSelectControl: function selectResourceFromSelectControl(value) {
+      this.selectedResourceId = value.value;
+      this.selectInitialResource();
+    },
+
+
+    /**
+     * Fill the forms formData with details from this field
      */
     fill: function fill(formData) {
-      formData.append(this.field.attribute, this.currentValue || '');
+      formData.append(this.field.attribute, this.selectedResource ? this.selectedResource.value : '');
+
+      formData.append(this.field.attribute + '_trashed', this.withTrashed);
     },
 
 
     /**
-     * Update the field's internal value.
+     * Get the resources that may be related to this resource.
      */
-    handleChange: function handleChange(value) {
-      this.value = value;
+    getAvailableResources: function getAvailableResources() {
+      var _this2 = this;
+
+      this.loading = true;
+      return _BelongsToFieldStorage2.default.fetchAvailableResources(this.resourceName, this.field.attribute, this.queryParams).then(function (_ref) {
+        var _ref$data = _ref.data,
+            resources = _ref$data.resources,
+            softDeletes = _ref$data.softDeletes,
+            withTrashed = _ref$data.withTrashed;
+
+        if (_this2.initializingWithExistingResource || !_this2.isSearchable) {
+          _this2.withTrashed = withTrashed;
+        }
+
+        // Turn off initializing the existing resource after the first time
+        _this2.initializingWithExistingResource = false;
+        _this2.availableResources = resources;
+        _this2.softDeletes = softDeletes;
+        _this2.loading = false;
+      });
+    },
+
+
+    /**
+     * Determine if the relatd resource is soft deleting.
+     */
+    determineIfSoftDeletes: function determineIfSoftDeletes() {
+      var _this3 = this;
+
+      return _BelongsToFieldStorage2.default.determineIfSoftDeletes(this.field.resourceName).then(function (response) {
+        _this3.softDeletes = response.data.softDeletes;
+      });
+    },
+
+
+    /**
+     * Determine if the given value is numeric.
+     */
+    isNumeric: function isNumeric(value) {
+      return !isNaN(parseFloat(value)) && isFinite(value);
+    },
+
+
+    /**
+     * Select the initial selected resource
+     */
+    selectInitialResource: function selectInitialResource() {
+      var _this4 = this;
+
+      this.selectedResource = _.find(this.availableResources, function (r) {
+        return r.value == _this4.selectedResourceId;
+      });
+    },
+
+
+    /**
+     * Toggle the trashed state of the search
+     */
+    toggleWithTrashed: function toggleWithTrashed() {
+      this.withTrashed = !this.withTrashed;
+
+      // Reload the data if the component doesn't support searching
+      if (!this.isSearchable) {
+        this.getAvailableResources();
+      }
     }
   },
+
   computed: {
-    currentValue: function currentValue() {
-      return _.last(this.formatValue);
-    },
     eventKey: function eventKey() {
       return _.get(this, 'field.eventKey', this.field.attribute + '-value-change');
+    },
+
+    /**
+     * Determine if we are editing and existing resource
+     */
+    editingExistingResource: function editingExistingResource() {
+      return Boolean(this.field.belongsToId);
+    },
+
+
+    /**
+     * Determine if we are creating a new resource via a parent relation
+     */
+    creatingViaRelatedResource: function creatingViaRelatedResource() {
+      return this.viaResource == this.field.resourceName && this.viaResourceId;
+    },
+
+
+    /**
+     * Determine if we should select an initial resource when mounting this field
+     */
+    shouldSelectInitialResource: function shouldSelectInitialResource() {
+      return Boolean(this.editingExistingResource || this.creatingViaRelatedResource);
+    },
+
+
+    /**
+     * Determine if the related resources is searchable
+     */
+    isSearchable: function isSearchable() {
+      return this.field.searchable;
+    },
+
+
+    /**
+     * Get the query params for getting available resources
+     */
+    queryParams: function queryParams() {
+      return {
+        params: {
+          current: this.selectedResourceId,
+          first: this.initializingWithExistingResource,
+          search: this.search,
+          withTrashed: this.withTrashed
+        }
+      };
+    },
+    isLocked: function isLocked() {
+      return this.viaResource == this.field.resourceName;
     }
   }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -10767,6 +10949,25 @@ module.exports = g;
 });
 
 /***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    fetchAvailableResources: function fetchAvailableResources(resourceName, fieldAttribute, params) {
+        return Nova.request().get("/nova-api/" + resourceName + "/associatable/" + fieldAttribute, params);
+    },
+    determineIfSoftDeletes: function determineIfSoftDeletes(resourceName) {
+        return Nova.request().get("/nova-api/" + resourceName + "/soft-deletes");
+    }
+};
+
+/***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10782,30 +10983,79 @@ var render = function() {
         "template",
         { slot: "field" },
         [
-          _c("el-cascader", {
-            staticClass: "w-full mb-2",
-            class: _vm.errorClasses,
-            attrs: {
-              id: _vm.field.name,
-              "show-all-levels": false,
-              options: _vm.options,
-              props: _vm.optionConfig,
-              placeholder: _vm.field.name,
-              filterable: "",
-              clearable: ""
-            },
-            model: {
-              value: _vm.formatValue,
-              callback: function($$v) {
-                _vm.formatValue = $$v
+          _c(
+            "el-select",
+            {
+              staticClass: "w-full",
+              class: { "border-danger": _vm.hasError },
+              attrs: {
+                filterable: _vm.isSearchable && !_vm.isLocked,
+                remote: _vm.isSearchable && !_vm.isLocked,
+                placeholder: _vm.field.name,
+                "remote-method": _vm.performSearch,
+                disabled: _vm.isLocked,
+                loading: _vm.loading
               },
-              expression: "formatValue"
-            }
-          }),
+              on: { change: _vm.selectResourceFromSelectControl },
+              model: {
+                value: _vm.selectedResource,
+                callback: function($$v) {
+                  _vm.selectedResource = $$v
+                },
+                expression: "selectedResource"
+              }
+            },
+            _vm._l(_vm.availableResources, function(item) {
+              return _c(
+                "el-option",
+                {
+                  key: item.value,
+                  attrs: { label: item.display, value: item }
+                },
+                [
+                  item.avatar
+                    ? _c("div", { staticClass: "flex items-center" }, [
+                        _c("div", { staticClass: "mr-3" }, [
+                          _c("img", {
+                            staticClass: "w-8 h-8 rounded-full block",
+                            attrs: { src: item.avatar }
+                          })
+                        ]),
+                        _vm._v(
+                          "\n\n                    " +
+                            _vm._s(item.display) +
+                            "\n                "
+                        )
+                      ])
+                    : _vm._e()
+                ]
+              )
+            }),
+            1
+          ),
           _vm._v(" "),
-          _c("el-alert", {
-            attrs: { closable: false, title: "该分类下扣点", type: "info" }
-          })
+          _vm.softDeletes && !_vm.isLocked
+            ? _c(
+                "div",
+                [
+                  _c(
+                    "checkbox-with-label",
+                    {
+                      attrs: { checked: _vm.withTrashed },
+                      on: { change: _vm.toggleWithTrashed }
+                    },
+                    [
+                      _vm._v(
+                        "\n                " +
+                          _vm._s(_vm.__("With Trashed")) +
+                          "\n            "
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            : _vm._e()
         ],
         1
       )

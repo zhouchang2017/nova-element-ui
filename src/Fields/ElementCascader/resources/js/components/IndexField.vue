@@ -1,9 +1,12 @@
 <template>
-    <span>{{ field.value.name }}</span>
+    <span>{{ name }}</span>
 </template>
 
 <script>
-export default {
+  import Helper from '../helper'
+
+  export default {
     props: ['resourceName', 'field'],
-}
+    mixins: [Helper]
+  }
 </script>

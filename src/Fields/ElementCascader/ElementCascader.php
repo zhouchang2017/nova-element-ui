@@ -54,5 +54,12 @@ class ElementCascader extends Field
         return parent::resolveAttribute($resource, $attribute);
     }
 
+    protected function fillAttributeFromRequest(NovaRequest $request, $requestAttribute, $model, $attribute)
+    {
+        if ($request->exists($requestAttribute)) {
+            $model->{$model->{$attribute}()->getForeignKey()} = $request[$requestAttribute];
+        }
+    }
+
 
 }

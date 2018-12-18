@@ -44,10 +44,12 @@
 
     watch: {
       currentValue: {
-        handler: function (value) {
-          Nova.$emit(this.eventKey, value)
+        handler: function (value, oldValue) {
+          if (value && value !== oldValue) {
+            Nova.$emit(this.eventKey, value)
+          }
         },
-        immediate: true
+        immediate: false
       }
     },
 
@@ -72,7 +74,6 @@
        * Update the field's internal value.
        */
       handleChange (value) {
-        console.log(value)
         this.value = value
       },
     },

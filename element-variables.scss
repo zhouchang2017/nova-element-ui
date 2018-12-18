@@ -52,7 +52,7 @@ $--link-hover-color: $--color-primary !default;
 
 /* Background
 -------------------------- */
-$--background-color-base: #f6fbff !default;
+$--background-color-base: $--color-white !default;
 
 /* Border
 -------------------------- */
@@ -492,7 +492,7 @@ $--table-fixed-box-shadow: 0 0 10px rgba(0, 0, 0, .12) !default;
 
 /* Pagination
 -------------------------- */
-$--pagination-font-size: 13px !default;
+$--pagination-font-size: 15px !default;
 $--pagination-fill: $--color-white !default;
 $--pagination-color: $--color-text-primary !default;
 $--pagination-border-radius: 3px !default;
@@ -717,4 +717,4 @@ $--breakpoints-spec: (
   'xl-only' : (min-width: $--xl),
 );
 
-//@import "~element-ui/packages/theme-chalk/src/index";
+@import "~element-ui/packages/theme-chalk/src/index";
